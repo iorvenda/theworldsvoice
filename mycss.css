@@ -1,0 +1,151 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #dae3f2;
+}
+#navtop nav ul li{
+
+margin-left: 5%;
+margin-right:5%;
+
+}
+nav ul li {
+  float: left;
+  padding: 8px;
+  list-style: none;
+  font-size: 100%;
+
+}
+ul li ul li {
+
+}
+ul li ul li {
+  display: none;
+}
+ul li:hover ul li {
+  display:inline-table;
+
+}
+a{
+  text-decoration: none;
+  font-size: 110%;
+  color:black;
+  font-family: 'B612', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'ZCOOL XiaoWei', serif;
+  text-shadow: .1px 1px purple;
+}
+H1{
+  text-align: center;
+  background-color: black;
+  margin-top: 0%;
+  color: white;
+  padding:14px 0px 14px 0px;
+font-family: 'B612', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'ZCOOL XiaoWei', serif;
+}
+.main_header{
+  background-color: #b3b3ff;
+  width: 100%;
+  height: 100px;
+margin-top: 6%;
+text-align: center;
+padding-top: 4%;
+font-size: 150%;
+font-weight:bolder;
+font-family: 'B612', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'ZCOOL XiaoWei', serif;
+transition:width 800ms;
+display: none;
+-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+animation-name: example;
+animation-duration: 9s;
+}
+.main_header{
+  width: 100%;
+  display: block;
+}
+@-webkit-keyframes example {
+  from {background-color: #8080ff;
+  color: white;}
+  to {background-color:purple ;
+  }
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: #8080ff;
+    color: white;
+}
+  to {background-color:purple;
+  color: white;}
+}
+footer{
+  width: 100%;
+  height: 5%;
+  background-color: white;
+  margin-top: 100%;
+  text-align: center;
+  padding-bottom: 1%;
+}
+#flex-container{
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-column-gap:8%;
+  padding:8px 6% 0px 6%;
+
+}
+img{
+    box-shadow: 5px 5px;
+    border-radius: 6px;
+}
+.mission {
+
+  margin: auto;
+  background-color: white;
+  padding:2% 20% 2% 20%;
+  font-size: 120%;
+  font-family: 'B612', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+.mainarticle {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap:1%;
+
+
+
+}
+.mainarticle article{
+  background-color: white;
+    box-shadow: 2px 2px;
+    padding:18px;
+    letter-spacing: 1px;
+margin: 0px 16px 0px 16px;
+  border-radius: 20px;
+}
+#bg{
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  opacity: .4;
+  background-image: url("kids.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+
+
+}
+#bg p{
+  z-index: 1;
+  color: white;
+}
+#location {
+
+  height: 100%;
+  margin:3% 30% 0px 30%;
+}
