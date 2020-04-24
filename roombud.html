@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style media="screen">
+    body{
+      padding:0;
+      margin: 0;
+      height: 812px;
+      color:#262626;
+    }
+    .main{
+      margin: 4px;
+    }
+    .count{
+      border: 2px solid #bfbfbf;
+      width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     background-color: #f2f2f2;
+    }
+    #image_num{
+      text-align: center;
+      display: block;
+      font-size: 1.2em;
+    }
+    #image_display{
+      width: 374px;
+      height: 400px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 6px;
+    }
+    .top{
+
+    }
+    .bottoms{
+      display: grid;
+      grid-template-columns: auto auto;
+      margin: 6px;
+    }
+    #no,#yes{
+       background-color: white;
+       padding:10px 15px 10px 15px;
+       display: block;
+     text-align: center;
+     margin: 6px;
+     border-radius: 5px;
+     font-size: 1.2em;
+    }#no{
+       background-color: #ff9999;
+     }
+     #yes{
+        background-color: #adebad;
+      }
+
+      @media screen and (min-width: 375px) {
+        .main
+        {
+          display: grid;
+          grid-template-columns: auto;
+        }
+      }
+    .top{
+      width: 100%;
+      height: 600px;
+
+    }
+     #image_display{
+      object-fit: contain;
+      width: 372px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .bottom{
+      margin: 0;
+      width: 100%;
+      height: 212px;
+
+    }
+    #article{
+
+    }
+      }
+    </style>
+    <script>
+    var count=0;
+ function roll()
+ {
+   var image = document.getElementById("image_display");
+   var images = ["2.jpg","3.jpg","4.jpg"];
+document.getElementById("image_num").innerHTML=count+1;
+ image.src = images[count];
+ count++;
+ if(count==3)
+ {
+   count=0;
+ }
+ }
+    </script>
+  </head>
+  <body>
+   <div class="main">
+      <div class="top">
+        <div class="count">
+          <label id="image_num">1</label>
+        </div>
+        <img  id="image_display"src="2.jpg"  onclick="roll()"alt="pic">
+
+
+      </div>
+      <div class="bottom">
+        <div id="article">
+          <article class="">
+            <h4>About Me</h4>
+            Born and raised in this state
+          </article>
+        </div>
+        <div class="bottoms">
+          <label id="no">NO</label>
+          <label id="yes">YES</label>
+        </div>
+      </div>
+   </div>
+  </body>
+</html>
