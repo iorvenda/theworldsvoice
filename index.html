@@ -6,6 +6,39 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="mycss.css">
     <title>World's Voice</title>
+    <style>
+      #main{
+padding-top:40px;
+margin:0 auto;
+width:50%;
+}</style>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+
+background-color:#333333;
+}
+.content{
+   
+   margin-top: 200px;
+     text-align: center;
+     padding:10px;
+}
+.form input{
+  margin-top: 16px;
+  padding: 6px;
+  width: 400px;
+  border-radius: 8px;
+  border-style: none;
+  text-align: center;
+  color:#bfbfbf;
+}
+::placeholder{
+color:#bfbfbf;}
+label{
+font-size:2rem;}
+    </style>
     <script>
       function no()
       {
@@ -27,11 +60,18 @@
       </ul>
     </nav>
   </div>
- <div class="main_header">
-   OUR MISSION
- </div>
-    <h1 onclick="no()">click here to get Answers to Henny request!!</h1>
-
+<div class="content">
+  <label style="color:white">SLADER</label>
+<div class="form">
+ <label style="color:red">${wrong}</label>
+  <form action="Login" method="post">
+    <input type="text" name="username" placeholder="USERNAME"value=""><br>
+    <input type="password" name="password" placeholder="PASSWORD"value=""><br>
+    <input type="submit" name="" value="LOGIN"><br>
+    <input type="button" name="action_alert" value="DONT HAVE AN ACCOUNT?" style="color:RED">
+  </form>
+</div>
+</div>
   </body>
 
 </html>
