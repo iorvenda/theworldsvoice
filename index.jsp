@@ -23,7 +23,7 @@ background-color:#333333;
      padding:10px;
 }
 .form input{
-  margin-top: 16px;
+  margin-top: 16px; 
   padding: 6px;
   width: 400px;
   border-radius: 8px;
